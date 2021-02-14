@@ -1,14 +1,21 @@
 <template>
   <div id="app">
+  <title/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Title from "./title.vue";
 
 export default {
-  name: 'App',
-}
+  name: "App",
+  components: {
+    Title,
+  },
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style>
