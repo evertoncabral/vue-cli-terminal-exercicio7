@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import Title from "./title.vue";
+import Title from './Title';
+
 
 export default {
   name: "App",
@@ -16,7 +17,7 @@ export default {
     return {};
   },
 };
-</script>
+</script> 
 
 <style>
 #app {
