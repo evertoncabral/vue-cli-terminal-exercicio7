@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-  <title/>
+    <title />
   </div>
 </template>
 
 <script>
-import Title from './Title';
-
+import Title from "./Title";
 
 export default {
   name: "App",
@@ -14,7 +13,16 @@ export default {
     Title,
   },
   data() {
-    return {};
+    return {
+      hello: "Hello World",
+    };
+  },
+  beforeCreate() {
+    console.log("before created");
+    console.log(this.hello);
+  },
+  created() {
+    console.log(" created app");
   },
 };
 </script> 
