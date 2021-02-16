@@ -18,14 +18,19 @@ export default {
     };
   },
   beforeCreate() {
-    console.log("before created");
+    console.log("before created app");
     console.log(this.hello);
   },
   created() {
     console.log(" created app");
   },
   beforeMount(){
-    console.log("before mount")
+    console.log(this.$el)
+    console.log("before mount app")
+  },
+  mounted(){
+    console.log(this.$el)
+    console.log(" mount app")
   }
 };
 </script> 
