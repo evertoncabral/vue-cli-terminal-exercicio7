@@ -24,6 +24,9 @@ export default {
   created() {
     console.log(" created app");
   },
+  beforeMount(){
+    console.log("before mount")
+  }
 };
 </script> 
 
